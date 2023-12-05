@@ -1,0 +1,294 @@
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    font-family: Arial;
+}
+
+.img {
+    width: 100%;
+}
+
+ul,
+li,
+h1,
+p {
+    padding: 0;
+    margin: 0;
+}
+
+/*NAV*/
+.nav {
+
+    width: 250px;
+    min-height: 100%;
+    position: fixed;
+    box-shadow: 1px 0px 0 0px rgba(170, 167, 167, 0.7);
+    background: rgb(133, 17, 17);
+}
+
+.nav ul {
+    list-style-type: none;
+    padding: 25px;
+}
+
+.nav ul li {
+    margin-top: 15px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #a2a3a5;
+    width: 100%;
+    display: block;
+    padding: 10px;
+}
+
+.nav ul img {
+    width: 36px;
+    vertical-align: middle;
+}
+
+.nav ul span {
+    font-size: 21px;
+    vertical-align: middle;
+    margin-left: 16px;
+}
+
+.menu-title {
+    font-weight: bold;
+    color: #69ad27;
+    font-size: 24px;
+}
+
+.active {
+    color: #69ad27 !important;
+}
+
+.mch {
+    color: #2e4765
+}
+
+.sc {
+    color: silver
+}
+
+.logo {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+    margin-top: 10%;
+}
+
+.clear-fix {
+    clear: both;
+}
+
+.border-bottom {
+    border-bottom: 1px solid rgb(221, 221, 221);
+}
+
+.nav ul li a:hover {
+    background-color: red;
+    color: aliceblue !important;
+}
+
+/*NAV END*/
+/*MAIN CONTAINER*/
+.main-container {
+    background: #eff1f7;
+    padding-left: 250px;
+    min-height: 100%;
+
+}
+
+/*MAIN CONTAINER END*/
+/* HEADAR BAR*/
+.header-bar {
+    background: white;
+    height: 120px;
+}
+
+.hb-left {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.hb-right {
+    width: 50%;
+    height: 100%;
+    float: right;
+
+}
+
+.search-box img {
+    width: 32px;
+    vertical-align: middle;
+}
+
+.search-box {
+    background: #f5f7fd;
+    margin-top: 27px;
+    margin-left: 50px;
+    display: inline-block;
+    padding: 16px 26px;
+    border-radius: 50px;
+
+}
+
+.search-box input {
+    background: unset;
+    border: unset;
+    font-size: 21px;
+    vertical-align: bottom;
+    height: 33px;
+    margin-left: 20px;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.not-icons {
+    width: 30px;
+    margin-right: 20px;
+    margin-bottom: 15px;
+
+}
+
+.avatar {
+    width: 60px;
+    margin-right: 50px
+}
+
+.hb-right {
+    text-align: right;
+    padding-top: 27px;
+    ;
+}
+
+.hb-right>div {
+    display: inline-block;
+}
+
+/*HEADER BAR END*/
+/* CONTAINER*/
+.container {
+    padding-left: 50px;
+    padding-top: 27px;
+    padding-right: 50px;
+}
+
+.box {
+    width: 100%;
+    border-radius: 20px;
+    background: white;
+}
+
+/* container end*/
+/*STATISTIC*/
+.stat-box {
+    width: 25%;
+    float: left;
+    padding: 10px;
+}
+
+.stat-box:first-of-type {
+    padding-left: 0;
+}
+
+.stat-box:last-of-type {
+    padding-right: 0;
+}
+
+.stat-box-inner {
+    padding: 36px 25px;
+}
+
+.sb-left {
+    float: left;
+    width: 30%;
+    text-align: right;
+}
+
+.sb-left img {
+    width: 60px
+}
+
+.sb-right {
+    padding-left: 160px;
+}
+
+
+
+/*STATISTIC END*/
+/*COMPANY INCOME*/
+.company-income {
+    padding: 20px;
+    margin-top: 27px;
+    min-height: 190px;
+}
+
+.income-row>div {
+    float: left;
+    width: 25%;
+    text-align: center;
+    padding-top: 28px;
+}
+
+/*COMPANY INCOME END*/
+
+/*RECENT ACTIVITY*/
+.recent-activity {
+    margin-top: 27px;
+    min-height: 600px;
+}
+
+.recent-activity .box {
+    padding: 20px;
+    min-height: 400px;
+
+}
+
+.recent-activity ul {
+    padding-left: 27px;
+}
+
+.recent-activity ul li {
+    color: #46f57a;
+    font-size: 24px;
+}
+
+.recent-activity ul li h5 {
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.recent-activity ul li p {
+    font-size: 12px;
+}
+
+.recent-activity>div {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+
+.ra-left {
+    padding-left: 0 !important;
+}
+
+.ra-right {
+    padding-right: 0 !important;
+}
+
+/*RECENT ACTIVITY END*/

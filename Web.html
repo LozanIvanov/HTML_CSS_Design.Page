@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Style.css">
+    <title>Document</title>
+    <style>
+        /*NAV*/
+        *{
+        box-sizing: border-box; 
+        }
+          body,html{
+            padding: 0;
+            margin: 0;
+            height: 100%;
+            font-family: Arial;
+        }
+        .img{
+           width:  100%;
+        }
+        .mch{
+        color:#2e4765
+        }
+        .sc{
+         color:silver
+        }
+        ul,li,h1,p{
+          padding: 0;
+          margin: 0;
+          }
+          .clear-fix{
+            clear: both;
+          }
+          .border-bottom{
+           border-bottom: 1px solid rgb(221,221,221);
+         }
+        .nav{
+           width: 250px; 
+           min-height: 100%;
+           position: fixed;
+           background: white;
+           box-shadow: 1px 0px 0 0px rgba(170,167,167,0.7);         
+         }
+        .logo{
+          width: 80%; 
+          display: block;
+          margin: 0 auto;
+          margin-top: 10px;
+        }
+        .nav ul{
+          list-style-type: none;
+          padding: 25px;
+        }
+        .menu-title{
+           font-size: 34px;
+           font-weight: bold; 
+           color:#69ad27
+        }
+        .nav ul img{
+           width: 36px;
+           vertical-align: middle;  
+        }
+        .nav ul span{
+            font-size: 24px;
+            vertical-align: middle; 
+            margin-left: 10px;   
+        }
+        .nav ul li a{
+           text-decoration: none;
+           padding: 10px;
+           display: block;
+           width: 100%;
+           color:#a2a3a5;
+        }
+        .nav ul li a:hover{ 
+           color: aliceblue;
+           background: red;
+         
+        }
+         .active{
+           color:#69ad27 !important;
+         }
+        /*NAV END*/
+        /*MAIN CONTAINER*/
+         .main{
+            padding-left: 250px;
+            min-height: 100%;
+            background: #eff1f7;
+         }
+        /*MAIN CONTAINER END*/
+        /*HEADER BAR*/
+         .header-bar{
+            height: 120px;
+            background: white; 
+         }
+          .hb-left{
+           width: 50%;
+           height: 100%;
+           float: left;  
+          }
+          .hb-right{
+            width: 50%;
+            height: 100%;
+            float: right; 
+            text-align: right; 
+            padding-top: 27px;
+          }
+          .search-box{
+            display: inline-block;
+            margin-left: 50px;
+            margin-top: 27px;
+            background: #f5f7fd;
+            border-radius: 50px;
+            padding: 16px 26px;
+            
+          }
+          .search-box img{
+            width: 27px;
+            vertical-align: middle;
+          }
+          .search-box input{
+             font-size: 21px;
+             margin-left: 15px;
+             vertical-align: bottom;
+             border: unset;
+             background: unset;
+             height: 33px;
+             
+          }
+          .hb-right >div{
+               display: inline-block;
+          }
+          .not-icons{
+             width: 31px;
+             margin-right: 20px;
+             vertical-align: middle;
+          }
+          .avatar{
+              width: 60px;
+              vertical-align: middle;
+              margin-right: 27px;
+          }
+        
+        /* HEADER BAR END*/
+        /*CONTAINER*/
+        .container{
+         padding-left: 50px;
+         padding-right: 50px;
+         padding-top: 27px;
+        }
+        .box{
+          width: 100%;
+          border-radius: 20px;
+          background: white;
+        }
+        /*CONTAINER END*/
+        /*STATISTIC*/
+         .stat-box{
+            float: left;
+            width: 25%;
+            padding: 10px;
+         }
+         .stat-box:first-of-type{
+            padding-left: 10px;
+         }
+         .stat-box:last-of-type{
+            padding-right: 10px;
+         }
+         .stat-box-inner{
+            padding: 36px 25px
+         }
+         .sb-left{
+            float: left;
+            text-align: right;
+            width: 30%;
+         }
+         .sb-left img{
+            width: 60px;
+         }
+         .sb-right{
+            padding-left: 160px ;
+         }     
+        /*STATISTIC END*/
+        /*COMPANY INCOME*/
+        .company-income{
+        padding: 20px;
+        margin-top: 27px;
+        min-height: 190px;
+        }
+        .income-row >div{
+         float: left;
+         width: 25%;
+         text-align: center;
+         padding-top: 28px;
+        }
+        /*COMPANY INCOME END*/
+
+        /*RECENT ACTIVITY*/
+        .recent-activity{
+         margin-top: 27px;
+         min-height: 600px;
+        }
+        .recent-activity .box{
+         padding: 20px;
+         min-height: 550px;
+        }
+        .recent-activity > div{
+          float: left;
+          width: 50%;
+          padding: 10px;
+        }
+        .recent-activity ul{
+          padding-left: 27px;
+         
+        }
+        .recent-activity ul li{
+         color:#46f57a;
+          font-size: 27px;
+        }
+        .recent-activity ul li h5{
+         margin-bottom: 0;
+         padding: 0;
+         margin:  0;
+         font-size:18px;
+         margin-bottom: 10px;
+         margin-top: 10px
+         }
+         .recent-activity ul li p{
+            font-size: 12px;
+         }
+         .ra-left{
+          padding-left: 0 !important;
+          }
+          .ra-right{
+          padding-right: 0 !important;
+          }
+        /*RECENT ACTIVITY END*/
+    </style>
+</head>
+
+<body>
+   <!--Nav-->
+    <div class="nav">
+      <img  class="logo"src="/Imige/logo.jpg">
+      <ul>
+        <li class="menu-title"> Dashboard</li>
+        <li>
+            <a href="">
+               <img src="/Imige//home.jpg">
+               <span>Dashboard</span>
+            </a> 
+        </li>
+        <li class="menu-title"> SCR</li>
+        <li>
+            <a href="">
+               <img src="/Imige/people.png">
+               <span>Client</span>
+            </a> 
+        </li>
+        <li>
+            <a href="">
+               <img src="/Imige/project.png">
+               <span>Projects</span>
+            </a> 
+        </li>
+        <li>
+            <a href="">
+               <img src="/Imige/invoice.webp">
+               <span>Invoices</span>
+            </a> 
+        </li>
+      </ul>
+    
+    </div>
+    <!--nav end-->
+    <!--MAIN CONTAINER-->
+    <div class="main">
+     <!--HEADER BAR--> 
+     <div class="header-bar">
+        <div class="hb-left">
+            <div class="search-box">
+                <img src="/Imige/lupa.png">
+                <input type="text" placeholder="Search...">
+            </div>
+        </div> 
+        <div class="hb-right">
+              <div>
+               <img src="/Imige/bell.png" class="not-icons">
+              </div>
+              <div>
+               <img src="/Imige/message.png" class="not-icons">
+              </div>
+              <div>
+               <img src="/Imige/person.png" class="avatar">
+              </div>
+        </div>      
+            
+     </div>
+     <!--HEADER BAR END--> 
+     <!--CONTEINER-->
+     <div class="container">
+        <!--STATISTIC-->
+        <div class="statistic">
+           <div class="stat-box">
+            <div class="box stat-box-inner">
+                <div class="sb-left">
+                   <img src="/Imige/person.png" alt="">
+                </div>
+                <div class="sb-right">
+                    <h1 class="mch">55</h1>
+                    <p class="sc">Employees</p>
+                </div>
+            </div>
+           </div> 
+           <div class="stat-box">
+            <div class="box stat-box-inner">
+                <div class="sb-left">
+                   <img src="/Imige/invoice1.png" alt="">
+                </div>
+                <div class="sb-right">
+                    <h1 class="mch">1250</h1>
+                    <p class="sc">Invoices</p>
+                </div>
+            </div>
+           </div>           
+           <div class="stat-box">
+            <div class="box stat-box-inner">
+                <div class="sb-left">
+                   <img src="/Imige/projectcolor.png" alt="">
+                </div>
+                <div class="sb-right">
+                    <h1 class="mch">134</h1>
+                    <p class="sc">Projects</p>
+                </div>
+            </div>
+           </div>           
+           <div class="stat-box">
+            <div class="box stat-box-inner">
+                <div class="sb-left">
+                   <img src="/Imige/family.png" alt="">
+                </div>
+                <div class="sb-right">
+                    <h1 class="mch">55</h1>
+                    <p class="sc">Clients</p>
+                </div>
+            </div>
+           </div>                     
+
+        </div>
+        <!--STATISTIC END-->
+        <div class="clear-fix"></div>
+        <!--COMPANY INCOMES-->
+        <div class="company-income box">
+         <div class="border-bottom">
+              <h3 class="mch">Company incomes</h3>
+         </div>
+         <div class="income-row">
+            <div>
+            <h1 class="mch">15 755</h1>
+            <p class="sc">Today</p>
+            </div>
+            <div>
+               <h1 class="mch">125 033 £</h1>
+               <p class="sc">last 7 days</p>
+           </div>
+            <div>
+               <h1 class="mch">565 423 £</h1>
+               <p class="sc">last 30 days</p>
+           </div>
+           <div>
+               <h1 class="mch">4 554 321 £</h1>
+               <p class="sc">last 365 days</p>
+           </div>
+         </div>
+
+        </div>
+         <!--COMPANY INCOMES END-->
+         <div class="clear-fix"></div>
+         <!--RECENT ACTIVITY-->
+         <div class="recent-activity">
+            <div class="ra-left">
+               <div class="box">
+                  <div class="bottom-border">
+                      <h1 class="mch">Recent Activity</h1>
+                  </div>
+                  <div>
+                       <ul>
+                         <li>
+                            <h5 class="mch">15 min ago</h5>
+                            <p class="sc">New client arrived</p>
+                         </li>
+                         <li>
+                           <h5 class="mch">15 min ago</h5>
+                           <p class="sc">New client arrived</p>
+                        </li>
+                        <li>
+                           <h5 class="mch">15 min ago</h5>
+                           <p class="sc">New client arrived</p>
+                        </li>
+                        <li>
+                           <h5 class="mch">15 min ago</h5>
+                           <p class="sc">New client arrived</p>
+                        </li>
+                        <li>
+                           <h5 class="mch">15 min ago</h5>
+                           <p class="sc">New client arrived</p>
+                        </li>
+                        <li>
+                           <h5 class="mch">15 min ago</h5>
+                           <p class="sc">New client arrived</p>
+                        </li>
+                       </ul>
+                   </div>
+               </div>
+            </div>
+            <div class="ra-right">
+               <div class="box">
+                  <div class="bottom-border">
+                      <h1 class="mch">Recent Activity</h1>
+                  </div>
+                  <div>
+                       <ul>
+                         <li>
+                            <h5 class="mch">15 min ago</h5>
+                            <p class="sc">New client arrived</p>
+                         </li>
+                         <li>
+                           <h5 class="mch">15 min ago</h5>
+                           <p class="sc">New client arrived</p>
+                        </li>
+                        <li>
+                           <h5 class="mch">15 min ago</h5>
+                           <p class="sc">New client arrived</p>
+                        </li>
+                        <li>
+                           <h5 class="mch">15 min ago</h5>
+                           <p class="sc">New client arrived</p>
+                        </li>
+                        <li>
+                           <h5 class="mch">15 min ago</h5>
+                           <p class="sc">New client arrived</p>
+                        </li>
+                        <li>
+                           <h5 class="mch">15 min ago</h5>
+                           <p class="sc">New client arrived</p>
+                        </li>
+                       </ul>
+                   </div>
+               </div>
+            </div>
+        
+
+         </div>
+         <!--RECENT ACTIVITY END-->
+     </div>
+     <!--CONTAINER END-->
+    </div>
+    <!--MAIN CONTAINER END-->
+</body>
+</html>
